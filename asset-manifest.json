@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/employees-absences-tracker/static/css/main.34527e6c.css",
+    "main.js": "/employees-absences-tracker/static/js/main.85e4bc3c.js",
+    "static/js/453.798461bd.chunk.js": "/employees-absences-tracker/static/js/453.798461bd.chunk.js",
+    "index.html": "/employees-absences-tracker/index.html",
+    "main.34527e6c.css.map": "/employees-absences-tracker/static/css/main.34527e6c.css.map",
+    "main.85e4bc3c.js.map": "/employees-absences-tracker/static/js/main.85e4bc3c.js.map",
+    "453.798461bd.chunk.js.map": "/employees-absences-tracker/static/js/453.798461bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34527e6c.css",
+    "static/js/main.85e4bc3c.js"
+  ]
+}
