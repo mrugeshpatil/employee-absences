@@ -5,14 +5,40 @@ import { store } from '../../../redux/store/store';
 import EmployeeTable from './index';
 import { EmployeeType } from '../../../interfaces/employee-types';
 
-const mockTheadData = ['Start date', 'End date', 'Employee name', 'Approval', 'Employee Absence Type'];
+//const mockTheadData = ['Start date', 'End date', 'Employee name', 'Approval', 'Employee Absence Type'];
+const mockTheadData =  [
+    {
+      key: 'id',
+      label: 'ID'
+    },
+    {
+      key: 'startDate',
+      label: 'Start date'
+    },
+    {
+      key: 'employee.firstName',
+      label: 'Name'
+    },
+    {
+      key: 'approved',
+      label: 'Approval'
+    },
+    {
+      key: 'absenceType',
+      label: 'Absence Type'
+    }
+  ]
 const mockEmployeeAbsenceData: EmployeeType[] = [
   {
     employee: { firstName: 'John', lastName: 'Doe' },
     startDate: '2023-01-01',
     absenceType: 'Sick Leave',
     approved: true,
-    id: 1
+    id: 1,
+    asc: '',
+    desc: '',
+    initial: '',
+    days: 5
   }
 ];
 
@@ -25,8 +51,9 @@ describe('EmployeeTable', () => {
     );
 
     mockTheadData.forEach((header) => {
-      expect(screen.getByText(header)).toBeInTheDocument();
+      expect(screen.getByText(header.label)).toBeInTheDocument();
     });
+
   });
 
   test('renders employee data correctly', () => {

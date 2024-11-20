@@ -7,6 +7,7 @@ export const fetchEmployeeAbsences = createAsyncThunk(
     const response = await axios.get(
       "https://front-end-kata.brighthr.workers.dev/api/absences"
     );
+    console.log('DATA >>> ', response.data)
     return response.data;
   }
 );
